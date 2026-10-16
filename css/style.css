@@ -1,0 +1,970 @@
+body {
+    background-color: #f7f2e8;
+    color: #354a36;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 40px;
+    overflow-wrap: break-word;
+}
+
+h1 {
+    color: #354a36;
+    font-size: 42px;
+    text-align: center;
+}
+
+h1 + p {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: #87977a;
+
+}
+
+body > p:nth-of-type(2) {
+    text-align: center;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 0 20px;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #354a36;
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+}
+
+h3 {
+    color: #718065;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+h3 + p {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 25px;
+    padding: 0 20px;
+
+}
+
+a {
+    display: inline-block;
+    background-color: #354a36;
+    color: #f7f2e8;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+a:hover {
+    background-color: #87977a;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #c5ad7a;
+    margin: 15px auto 0;
+
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+
+    }
+
+    h2 {
+        font-size: 26px;
+
+    }
+
+}
+
+/* Navigation menu */
+nav {
+    background-color: #354a36;
+    text-align: center;
+    padding: 12px 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+nav a {
+    display: inline-block;
+    background-color: transparent;
+    color: #f7f2e8;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+nav a:first-child {
+    background-color: #53694d;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: #87977a;
+    color: #ffffff;
+
+}
+
+/* Experience Cards */
+.experience-card {
+    background-color: #F1EADF;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 28px;
+    border: 1px solid #d9b8aa;
+    border-radius: 14px;
+    box-sizing: border-box;
+    min-height: 360px;
+    box-shadow: 0 4px 12px rgba(53, 74, 54, 0.08);
+
+}
+
+.experience-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #53694d;
+}
+
+.experience-card p {
+    color: #626b5a;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.experience-card h3::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background-color: #c5ad7a;
+    margin: 10px auto 0;
+}
+
+
+.experience-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(53, 74, 54, 0.15);
+
+}
+
+.experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius:10px 10px 4px 4px;
+    transition: transform 0.3s ease;
+}
+   .experience-card:hover img {
+        transform: scale(1.03);
+    }
+
+/* Layout for the experience cards */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: stretch;
+
+}
+
+.experience-grid .experience-card {
+    width: 100%;
+    margin: 0;
+
+}
+
+/* Mobile layout for experience cards */
+@media (max-width: 600px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero img {
+        height: 250px;
+    }
+}
+
+/* Centre the experience link */
+
+.explore-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.explore-link a {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-link a:hover {
+    background-color: #87977a;
+    transform: translateY(-2px);
+}
+
+
+/* Homepage footer */
+footer {
+    background-color: #354a36;
+    color:#f7f2e8;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hero image */
+.hero {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0 20px;
+    background: linear-gradient(
+        rgba(30, 42, 29, 0.12),
+        rgba(30, 42, 29, 0.35)
+    );
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+
+}
+
+/* Homepage introduction */
+.intro p:last-child {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 25px;
+}
+
+/* Decorative divider */
+.section-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #c5ad7a;
+    margin: 25px auto;
+}
+
+/* Animation entrance for the hero text */
+.hero-text {
+    animation: heroFadeIn 1.2s ease-out both;
+}
+
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        translate: 0 10px;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+
+/* Soft paper style introduction section */
+.intro {
+    background-color: #F1EADF;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 35px 45px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+}
+
+/* Hero heading and tagline */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    width: calc(100%);
+    box-sizing: border-box;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    color: #FFFFFF;
+    font-size: 52px;
+    margin: 0 0 12px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text p {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
+}
+.hero-text p::after {
+    content: "☘";
+    display: block;
+    color: #e2cf9f;
+    font-size: 30px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+nav .logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 10px 5px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    nav .logo img {
+        width: 65px;
+    }
+
+    nav a:not(.logo) {
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+nav a.logo {
+    background-color: transparent;
+    padding: 0;
+    margin-right: 15px;
+}
+
+/*Index Experiences */
+.page-intro {
+     text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Killarney photo gallery */
+.destination-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 150px);
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.destination-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.destination-gallery img:first-child {
+    grid-row:1 / 3;
+}
+
+
+/* Destination card styling */
+.destination-card {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #fffcf6;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(53, 74, 54, 0.10);
+    box-sizing: border-box;
+}
+.destination-location {
+    color: #718065;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.destination-info h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #354a36;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.destination-info > p:not(.destination-location):not(.destination-duration):not(.destination-price) {
+    color: #55584f;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.destination-duration {
+    color: #55584f;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.destination-price {
+    color: #354a36;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+@media (max-width: 600px) {
+    .destination-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 180px);
+    }
+
+    .destination-gallery img:first-child {
+        grid-row: auto;
+    }
+    .destination-card {
+        width: calc(100% - 24px);
+        margin: 20px auto;
+        padding: 14px;
+    }
+    .destination-info h3 {
+        font-size: 22px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    .destination-info > p:not(.destination-location):not(.destination-duration):not(.destination-price) {
+        font-size: 15px;
+        line-height: 1.7;
+        text-align: left;
+    }
+    .destination-duration {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .destination-price {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+}
+
+/* Destination filters */
+.destination-filters {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #FFFCF6;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(53, 74, 54, 0.10);
+    text-align: center;
+}
+
+.destination-filters h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #354A36;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.filter-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.filter-group label {
+    display: block;
+    color: #354A36;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #87977A;
+    border-radius: 6px;
+    background-color: #F7F2E8;
+    color: #354A36;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+#apply-filters {
+    background-color: #354A36;
+    color: #F7F2E8;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#apply-filters:hover {
+    background-color: #718065;
+}
+
+
+/* No results message */
+#no-results {
+    max-width: 1000px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    color: #354A36;
+    background-color: #FFFCF6;
+    border: 1px solid #87977A;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+
+/* Website footer */
+.site-footer {
+    background-color: #354A36;
+    color: #F7F2E8;
+    text-align: center;
+    padding: 24px 16px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* Contact page introduction */
+.contact-intro {
+    max-width: 800px;
+    margin: 50px auto 40px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contact-intro .eyebrow {
+    color: #718065;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.contact-intro h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #354A36;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.contact-intro > p:last-child {
+    color: #55584F;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .contact-intro {
+        margin: 30px auto;
+        padding: 16px;
+    }
+
+    .contact-intro h1 {
+        font-size: 30px;
+    }
+}
+
+/* Booking form container */
+.booking-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #FFFCF6;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(53, 74, 54, 0.10);
+    box-sizing: border-box;
+}
+
+.booking-section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #354A36;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.booking-section > p {
+    color: #55584F;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 600px) {
+    .booking-section {
+        width: calc(100% - 24px);
+        padding: 20px;
+        margin: 24px auto;
+    }
+
+    .booking-section h2 {
+        font-size: 26px;
+    }
+}
+
+/* Booking form fields */
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    color: #354A36;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #87977A;
+    border-radius: 6px;
+    background-color: #F7F2E8;
+    color: #354A36;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Booking form submit button */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    margin-top: 10px;
+    background-color: #354A36;
+    color: #F7F2E8;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #718065;
+}
+
+.submit-button:focus-visible {
+    outline: 3px solid #C5AD7A;
+    outline-offset: 3px;
+}
+
+/* Booking form feedback */
+#form-feedback {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 6px;
+    color: #354A36;
+    background-color: #F1EADF;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: bold;
+    border: 1px solid #87977A;
+    font-weight: bold;
+    border: 1px solid #87977A;
+}
+
+/* Form field focus effect */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #718065;
+    outline-offset: 2px;
+    border-color: #354A36;
+}
+
+/* Contact page mobile adjustments */
+@media (max-width: 600px) {
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    .submit-button {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+
+    nav a:not(.logo) {
+    margin: 0;
+    padding: 6px 4px;
+    font-size: 14px;
+}
+}
+
+/* Consistent main heading style */
+main h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #354A36;
+    line-height: 1.2;
+}
+/* Featured destinations introduction */
+.featured-destinations {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.featured-destinations .eyebrow {
+    color: #718065;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.featured-destinations h2 {
+    color: #354A36;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 10px 0 15px;
+}
+
+.featured-destinations > p:last-child {
+    color: #55584F;
+    line-height: 1.7;
+}
+/* Vintage destination carousel */
+.destination-carousel {
+    max-width: 800px;
+    margin: 30px auto;
+    position: relative;
+    min-height: 550px;
+    display: flow-root;
+}
+
+.destination-slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Keep your other existing properties below */
+}
+
+.destination-slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #FFFCF6;
+    border: 1px solid #D9B8AA;
+    box-shadow: 0 6px 20px rgba(53, 74, 54, 0.12);
+}
+
+.destination-slide img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+.destination-slide:hover img {
+    transform: scale(1.02);
+}
+
+.slide-caption {
+    padding: 24px;
+    text-align: center;
+    background-color: #FFFCF6;
+}
+
+.slide-caption .eyebrow {
+    color: #718065;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.slide-caption h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #354A36;
+    font-size: 26px;
+    margin: 10px 0 14px;
+}
+
+.slide-caption > p:last-child {
+    color: #55584F;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Carousel navigation buttons */
+   .carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto 10px;
+    min-height: 44px;
+    align-items: center;
+   }
+
+.carousel-controls button {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #87977A;
+    border-radius: 50%;
+    background-color: #FFFCF6;
+    color: #354A36;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+    background-color: #354A36;
+    color: #F7F2E8;
+}
+
+.carousel-controls button:focus-visible {
+    outline: 2px solid #C5AD7A;
+    outline-offset: 3px;
+}
+/* Show only the active destination */
+.destination-slide.active {
+    display: block;
+}
+
+/*Carrosel media*/
+@media (max-width: 600px) {
+    .destination-carousel {
+        width: calc(100% - 24px);
+        margin: 24px auto;
+    }
+
+    .destination-slide img {
+        height: 240px;
+    }
+
+    .slide-caption {
+        padding: 18px 14px;
+    }
+
+    .slide-caption h3 {
+        font-size: 22px;
+    }
+}
+/* Gentle fade-in for destination slides */
+.destination-slide.active {
+    animation: destinationFade 0.5s ease;
+}
+
+@keyframes destinationFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Destination carousel counter */
+.carousel-counter {
+    text-align: center;
+    color: #718065;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 10px auto 20px;
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .destination-slide,
+    .destination-slide img {
+        animation: none;
+        transition: none;
+    }
+}
+

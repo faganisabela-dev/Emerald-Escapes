@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Experiences | Emerald Escapes</title>
+        <link rel="icon" type="image/png" href="../images/emerald-logo.png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+        <nav>
+            <a href="../index.html" class="logo">
+                <img src="../images/emerald-logo.png" alt="Emerald Escapes - Discover Ireland">
+            </a>
+
+            <a href="../index.html">Home</a>
+            <a href="index.html">Experiences</a>
+            <a href="../contact/index.html">Contact & Booking</a>
+        </nav>
+
+        <header class="page-intro">
+            <p class="eyebrow">FIND YOUR PERFECT ESCAPE</p>
+            <h1>Explore Our Experiences</h1>
+            <p>
+                From charming countryside retreats to breathtaking coastal adventures,
+        discover the places that make Ireland unforgettable.
+            </p>
+        </header>
+
+        <!-- Destination filters -->
+         <section class="destination-filters">
+            <h2>Find Your Perfect Experience</h2>
+
+            <div class="filter-group">
+                <label for="category-filter">Choose a category:</label>
+                
+                <select id="category-filter">
+                    <option value="all">All experiences</option>
+                    <option value="coastal">Coastal escapes</option>
+                    <option value="countryside">Countryside retreats</option>
+                    <option value="city">City and culture</option>
+                    <option value="adventure">Adventure and nature</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="price-filter">Choose a price range:</label>
+                
+                <select id="price-filter">
+                    <option value="all">All prices</option>
+                    <option value="under-100">Under €100</option>
+                    <option value="100-150">€100–€150</option>
+                    <option value="over-150">Over €150</option>
+                </select>
+            </div>
+            <button id="apply-filters" type="button">Apply Filters</button>
+        </section>
+
+       <!--Killarney card-->
+       
+       <div class="destination-card" data-category="countryside" data-price="149">
+        
+        <div class="destination-gallery">
+        <img src="../images/killarney.jpg"
+             alt="Torc Waterfall surrounded by lush woodland in Killarney National Park">
+
+        <img src="../images/killarney1.jpg"
+             alt="Historic Muckross House and its beautiful gardens in Killarney">
+
+        <img src="../images/killarney3.jpg"
+             alt="Scenic mountain landscape at the Gap of Dunloe in County Kerry">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY KERRY, IRELAND</p>
+
+        <h2>Killarney:Lakes, Waterfalls &amp; Heritage</h2>
+
+        <p>
+            Discover the magic of Killarney, where peaceful lakes,
+            cascading waterfalls and enchanting woodland trails
+            create the perfect Irish escape. Visit the beautiful
+            Torc Waterfall, explore the historic Muckross House
+            and admire the breathtaking scenery of the Gap of Dunloe.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €149 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Galway card-->
+
+<div class="destination-card" data-category="city" data-price="129">
+
+    <div class="destination-gallery">
+        <img src="../images/galway.jpg"
+             alt="Colourful streets in Galway City">
+
+        <img src="../images/galway1.jpg"
+             alt="Night Life">
+
+        <img src="../images/galway2.jpg"
+             alt="Scenic views of Galway Cathedral">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY GALWAY, IRELAND</p>
+
+        <h3>Galway: City & Culture</h3>
+
+        <p>
+            Discover the colourful streets and charming atmosphere
+            of Galway City. Enjoy traditional Irish music, explore
+            independent shops and cosy cafés, and experience the
+            welcoming spirit of Ireland's west coast.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €129 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Cliffs of Moher card-->
+
+<div class="destination-card" data-category="coastal" data-price="69">
+
+    <div class="destination-gallery">
+        <img src="../images/cliffs.jpg"
+             alt="Dramatic cliffs overlooking the Atlantic Ocean">
+
+        <img src="../images/cliffs1.jpg"
+             alt="Walking path along the Cliffs of Moher">
+
+        <img src="../images/cliffs2.jpg"
+             alt="Beautiful coastal views in County Clare">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY CLARE, IRELAND</p>
+
+        <h3>Cliffs of Moher Coastal Escape</h3>
+
+        <p>
+            Experience Ireland's spectacular Atlantic coastline at
+            the magnificent Cliffs of Moher. Enjoy breathtaking ocean
+            views, explore scenic walking paths and discover the wild
+            beauty of County Clare on an unforgettable coastal escape.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €69 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Wicklow Card-->
+
+<div class="destination-card" data-category="countryside" data-price="159">
+
+    <div class="destination-gallery">
+        <img src="../images/wicklow.jpg"
+             alt="Green rolling hills in the Wicklow Mountains">
+
+        <img src="../images/wicklow1.jpg"
+             alt="Peaceful lake surrounded by the Wicklow countryside">
+
+        <img src="../images/wicklow2.jpg"
+             alt="Scenic walking trail through the Wicklow Mountains">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY WICKLOW, IRELAND</p>
+
+        <h3>Wicklow Country Retreat</h3>
+
+        <p>
+            Escape to the peaceful beauty of Ireland's Garden County.
+            Discover rolling green hills, tranquil lakes and scenic
+            walking trails surrounded by breathtaking mountain views.
+            Enjoy a relaxing countryside escape and experience the
+            charm of Wicklow's beautiful landscapes.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €160 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Dingle Card-->
+
+<div class="destination-card" data-category="coastal" data-price="139">
+
+    <div class="destination-gallery">
+        <img src="../images/dingle.jpg"
+             alt="Dramatic coastal scenery along the Dingle Peninsula">
+
+        <img src="../images/dingle1.jpg"
+             alt="Colourful traditional buildings in Dingle town">
+
+        <img src="../images/dingle2.jpg"
+             alt="Scenic Atlantic coastline near Slea Head in County Kerry">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY KERRY, IRELAND</p>
+
+        <h3>Dingle Peninsula Coastal Paradise</h3>
+
+        <p>
+             Discover the wild beauty of the Dingle Peninsula, where
+             dramatic Atlantic cliffs meet charming fishing villages
+             and winding coastal roads. Explore colourful Dingle town,
+             admire the breathtaking scenery at Slea Head and experience
+             the peaceful charm of Ireland's spectacular west coast.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €130 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Connemara & Kylemore Abbey Card-->
+
+<div class="destination-card" data-category="countryside" data-price="169">
+
+    <div class="destination-gallery">
+        <img src="../images/connemara.jpg"
+             alt="Mountain scenery">
+
+        <img src="../images/connemara1.jpg"
+             alt="Historic Kylemore Abbey beside its peaceful lake">
+
+        <img src="../images/connemara2.jpg"
+             alt="Beautiful gardens surrounded by the mountains of Connemara">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY GALWAY, IRELAND</p>
+
+        <h3>Connemara & Kylemore Abbey</h3>
+
+        <p>
+             Discover the wild beauty of Connemara, where rugged
+             mountains, peaceful lakes and winding country roads
+             create a truly memorable Irish escape. Visit the
+             romantic lakeside Kylemore Abbey, explore its beautiful
+             Victorian Walled Garden and enjoy the tranquillity of
+             one of Ireland's most enchanting landscapes.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €170 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Kilkenny Card-->
+
+<div class="destination-card" data-category="city" data-price="79">
+
+    <div class="destination-gallery">
+        <img src="../images/kilkenny.jpg"
+             alt="Mountain scenery">
+
+        <img src="../images/kilkenny1.jpg"
+             alt="Historic Kylemore Abbey beside its peaceful lake">
+
+        <img src="../images/kilkenny2.jpg"
+             alt="Beautiful gardens surrounded by the mountains of Connemara">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY KILKENNY, IRELAND</p>
+
+        <h3>Kilkenny Medieval City</h3>
+
+        <p>
+             Step back in time as you explore the medieval charm of
+             Kilkenny City. Discover the impressive Kilkenny Castle,
+             wander through historic streets and browse independent
+             craft shops. Enjoy the beautiful architecture, cosy cafés
+             and welcoming atmosphere of one of Ireland's most
+             characterful heritage destinations.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €80 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Cork Card-->
+
+<div class="destination-card" data-category="city" data-price="149">
+
+    <div class="destination-gallery">
+        <img src="../images/cork.jpg"
+             alt="Colourful buildings along the River Lee in Cork City">
+
+        <img src="../images/cork1.jpg"
+             alt="Historic stalls and produce inside Cork's English Market">
+
+        <img src="../images/cork2.jpg"
+             alt="Scenic harbour and waterfront near Cork">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY CORK, IRELAND</p>
+
+        <h3>Cork City & Harbour</h3>
+
+        <p>
+             Discover the lively charm of Cork, from its colourful
+             streets and historic buildings to the famous English
+             Market. Enjoy riverside walks, explore independent shops
+             and cosy cafés, and venture towards the picturesque
+             harbour villages for a memorable taste of Ireland's
+             southern coast.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €140 per person
+        </p>
+
+    </div>
+</div>
+
+<!--titanic Card-->
+
+<div class="destination-card" data-category="city" data-price="179">
+
+    <div class="destination-gallery">
+        <img src="../images/titanic.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/titanic1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/titanic2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">BELFAST, NORTHERN IRELAND</p>
+
+        <h3>Titanic Belfast & Maritime Heritage</h3>
+
+        <p>
+             Discover the fascinating story of the Titanic in Belfast,
+             the city where the famous ship was designed and built.
+             Explore the interactive Titanic Belfast experience,
+             learn about the city's shipbuilding heritage and enjoy
+             the historic waterfront, maritime attractions and
+             vibrant cultural atmosphere.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €180 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Aran island Card-->
+
+<div class="destination-card" data-category="adventure" data-price="99">
+
+    <div class="destination-gallery">
+        <img src="../images/aran.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/aran1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/aran2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY GALWAY, IRELAND</p>
+
+        <h3>Aran Islands Adventure</h3>
+
+        <p>
+             Discover the timeless beauty of the Aran Islands, where
+             rugged Atlantic coastlines, traditional stone walls and
+             ancient heritage create a truly unique Irish escape.
+             Explore the island's historic sites, admire breathtaking
+             ocean views and experience the charm of traditional
+             island life.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €100 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Dublin Card-->
+
+<div class="destination-card" data-category="city" data-price="89">
+
+    <div class="destination-gallery">
+        <img src="../images/dublin.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/dublin1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/dublin2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY DUBLIN, IRELAND</p>
+
+        <h3>Dublin City & Georgian Charm</h3>
+
+        <p>
+             Discover Dublin's rich history and vibrant city life,
+             from the elegant Georgian streets 
+             and colourful doors of Merrion Square to the historic grounds of Trinity College. 
+             Enjoy charming cafés, beautiful architecture and the lively atmosphere of Ireland's capital city.
+        </p>
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €90 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Giant Causeway & Antrim Card-->
+
+<div class="destination-card" data-category="city" data-price="89">
+
+    <div class="destination-gallery">
+        <img src="../images/giant.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/giant1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/giant2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY ANTRIM, IRELAND</p>
+
+        <h3>Giant's Causeway & Antrim Coast</h3>
+
+        
+             <p>Discover the breathtaking beauty of Northern Ireland's Antrim Coast, where dramatic cliffs, 
+                charming coastal villages and spectacular sea views await. Explore the famous Giant's Causeway, 
+                admire its unique hexagonal basalt columns and enjoy the stunning scenery along one of Ireland's most beautiful coastal routes.</p>
+        
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €119 per person
+        </p>
+
+    </div>
+</div>
+
+<!--Donegal Card-->
+
+<div class="destination-card" data-category="coastal" data-price="129">
+
+    <div class="destination-gallery">
+        <img src="../images/donegal.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/donegal1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/donegal2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY DONEGAL, IRELAND</p>
+
+        <h3>Donegal Wild Atlantic Way Escape</h3>
+
+        
+             <p>Explore the rugged beauty of County Donegal, where dramatic sea cliffs, golden beaches and winding coastal roads create unforgettable views. 
+                Discover the charm of traditional Irish villages,
+                 breathe in the fresh Atlantic air and experience the wild landscapes of Ireland's spectacular northwest coast.</p>
+        
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €130per person
+        </p>
+
+    </div>
+</div>
+
+<!--Sligo Card-->
+
+<div class="destination-card" data-category="coastal" data-price="109">
+
+    <div class="destination-gallery">
+        <img src="../images/sligo.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/sligo1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/sligo2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY SLIGO, IRELAND</p>
+
+        <h3>Sligo Coastal & Yeats Country</h3>
+
+        
+             <p>Discover the beauty of County Sligo, where golden beaches, 
+                dramatic coastal landscapes and charming villages meet Ireland's rich literary heritage. 
+                Visit the impressive Benbulben mountain, explore the seaside town of Strandhill 
+                and experience the landscapes that inspired poet W. B. Yeats.</p>
+        
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €109per person
+        </p>
+
+    </div>
+</div>
+
+<!--Waterford Card-->
+
+<div class="destination-card" data-category="city" data-price="99">
+
+    <div class="destination-gallery">
+        <img src="../images/Waterford.jpg"
+             alt="The striking exterior of Titanic Belfast museum">
+
+        <img src="../images/Waterford1.jpg"
+             alt="Maritime heritage exhibits at Titanic Belfast">
+
+        <img src="../images/Waterford2.jpg"
+             alt="Historic shipbuilding and waterfront in Belfast">
+    </div>
+
+    <div class="destination-info">
+
+        <p class="destination-location">COUNTY WATERFORD, IRELAND</p>
+
+        <h3>Waterford Crystal & Viking Heritage</h3>
+
+        
+             <p>Discover Ireland's oldest city, where Viking history meets elegant craftsmanship. 
+                Explore Waterford's medieval streets, learn about the city's fascinating past at the Viking Triangle 
+                and visit the famous House of Waterford Crystal to see skilled craftspeople at work. 
+                Enjoy charming cafés, historic landmarks and the welcoming atmosphere of this coastal city.</p>
+        
+
+        <p class="destination-duration">
+            Duration: 2 days / 1 night
+        </p>
+
+        <p class="destination-price">
+            From €100 per person
+        </p>
+
+    </div>
+</div>
+<p id="no-results" style="display: none;">No experiences match your filters. Please try another selection.</p>
+         <script src="../js/script.js"></script>
+         <footer class="site-footer">
+            <p>&copy; 2026 Emerald Escapes. A fictional company developed by Isabela Fagan for educational purpose.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Emerald Escapes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="../index.html" class="logo">
+            <img src="../images/emerald-logo.png" alt="Emerald Escapes logo">
+        </a>
+        <a href="../index.html">Home</a>
+        <a href="../experiences/index.html">Experiences</a>
+        <a href="index.html">Contact & Booking</a>
+    </nav>
+</header>
+<main>
+    <section class="contact-intro">
+        <p class="eyebrow">LET'S PLAN SOMETHING SPECIAL</p>
+        <h1>Begin Your Irish Escape</h1>
+        <p>
+            Have a question or ready to explore Ireland?
+            We would love to help you plan a memorable experience.
+            Get in touch with our team using the form below.
+        </p>
+    </section>
+    
+<section class="booking-section">
+    <h2>Plan Your Holiday</h2>
+    <p>Tell us a little about yourself so we can help you get started.</p>
+
+    <form id="booking-form">
+        <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="Enter your full name"
+                required
+            >
+        </div>
+        
+        <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        required
+    >
+</div>
+
+<div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+        pattern="[0-9]{7,15}"
+        required
+    >
+</div>
+
+<div class="form-group">
+    <label for="enquiry-type">What can we help you with?</label>
+    <select id="enquiry-type" name="enquiry-type" required>
+    <option value="">Please choose an option</option>
+    <option value="booking">Booking</option>
+    <option value="payment">Payment</option>
+    <option value="general-information">General Information</option>
+    <option value="other">Other</option>
+</select>
+
+</div>
+
+<div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Tell us about your plans or questions..."
+        required
+        minlength="10"
+    ></textarea>
+</div>
+
+<button type="submit" class="submit-button">
+    Send Your Enquiry
+</button>
+</form>
+
+<p id="form-feedback" role="status" aria-live="polite"></p>
+
+</section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Emerald Escapes. A fictional company developed by Isabela Fagan for educational purpose.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
